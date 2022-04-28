@@ -16,8 +16,9 @@ function renamer(files: string[]) {
 
 export function generateNewFolder() {
   const filesToBeRenamed = renamer(outputNewFolder.fileReaded());
-  
-  //TODO -> Create the file writer stream implementation 
-  //TODO -> and generate a new directory to renamed files.
-  
+
+  // ? FIX!
+  return filesToBeRenamed.map((file) =>
+    fs.renameSync(`./roms/${file}`, `./renamed/${file}`)
+  );
 }
