@@ -5,8 +5,7 @@ class OutputNewFolder {
 
   fileReaded(): string[] {
     const filesReaded = fs.readdirSync(this.Path, "utf-8");
-    const mapping = filesReaded.map((files) => files);
-    return mapping;
+    return filesReaded.filter((files) => files.endsWith(".bin"));
   }
 }
 
