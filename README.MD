@@ -1,6 +1,7 @@
 # AUTO RENAMER
 
-Project with purpose to facility file rename.
+# DISCLAIMER: This project have a purpose to rename my retroarch rom files somehow retroarch only accepts rom files in lowercase and
+this code do exactly, transform all files in directory in lowercase.
 
 # MVP - What we need:
 
