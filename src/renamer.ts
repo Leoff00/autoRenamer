@@ -15,7 +15,7 @@ function renamer(files: string[]) {
 }
 
 export function generateNewFolder() {
-  const filesToBeRenamed = renamer(outputNewFolder.fileReaded());
+  const filesToBeRenamed = renamer(outputNewFolder.filesReaded());
 
   // ? FIX!
   return filesToBeRenamed.map((file) =>
